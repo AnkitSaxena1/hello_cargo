@@ -7,8 +7,15 @@ fn main() {
 
     let a = [1,2,3];
 
-    println!("Array {}", a.len())
+    let mut index = String::new();
+
+    io::stdin()
+    .read_line(&mut index)
+    .expect("Not an number");
     
+    let index: usize = index.trim().parse().expect("Not an number");
+
+    println!("Index value is {}", a[index]);
 }
 
 fn guess_rnd()
