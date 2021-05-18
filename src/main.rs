@@ -16,7 +16,7 @@ fn ownership(){
 
     some(&mut s);
 
-    println!("{}", s);
+    // Some Comments.
     println!("{}", s);
 
 
