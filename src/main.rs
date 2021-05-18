@@ -3,11 +3,35 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
-    println!("Hello, world!");
 
+    println!("Hello, world! {}", sum(10, 20));
+
+    ownership();
+    
+}
+
+fn ownership(){
+
+    let mut s = String::from("Hello");
+
+    some(&mut s);
+
+    println!("{}", s);
+
+
+}
+
+fn some(a : &mut String){
+    a.push_str(" some");
+
+}
+
+fn array_sample(){
     let a = [1,2,3];
 
     let mut index = String::new();
+
+    println!("Enter Index");
 
     io::stdin()
     .read_line(&mut index)
@@ -16,6 +40,25 @@ fn main() {
     let index: usize = index.trim().parse().expect("Not an number");
 
     println!("Index value is {}", a[index]);
+}
+
+
+fn tuple_sample()
+{
+    let tup = (10, 20, 30);
+
+    let (x, y, z) = tup;
+
+    println! ("{} {} {}", x, y, z);
+}
+
+fn sum(x: usize, y: usize) -> usize{
+    x + y
+}
+
+fn get_and_return(x: usize) -> usize
+{
+    x
 }
 
 fn guess_rnd()
