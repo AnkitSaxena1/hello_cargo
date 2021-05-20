@@ -19,7 +19,7 @@ fn ownership(){
     // Some Comments.
     println!("{}", s);
 
-    // More commnets from feature ...
+    // Some changes in feature branch.
 
 
 }
