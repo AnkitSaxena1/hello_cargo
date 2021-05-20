@@ -19,7 +19,7 @@ fn ownership(){
     // Some Comments.
     println!("{}", s);
 
-    // Some changes in feature branch 123.
+    // Some changes in feature 2.
 
 
 }
