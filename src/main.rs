@@ -19,7 +19,7 @@ fn ownership(){
     // Some Comments.
     println!("{}", s);
 
-    // Feature 4 SQ Commit 2.
+    // Feature 4 SQ Commit 3.
 
 
 }
